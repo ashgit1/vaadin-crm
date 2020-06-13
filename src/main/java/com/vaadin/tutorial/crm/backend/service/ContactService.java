@@ -60,7 +60,7 @@ public class ContactService {
     public void populateTestData() {
         if (companyRepository.count() == 0) {
             companyRepository.saveAll(
-                    Stream.of("Path-Way Electronics", "E-Tech Management", "Path-E-Tech Management")
+                    Stream.of("Path-Way Electronics", "E-Tech Management", "Path-E-Tech Management", "Bite-Hunger")
                             .map(Company::new)
                             .collect(Collectors.toList()));
         }
@@ -75,7 +75,7 @@ public class ContactService {
                             "Eileen Walker", "Katelyn Martin", "Israel Carlsson", "Quinn Hansson", "Makena Smith",
                             "Danielle Watson", "Leland Harris", "Gunner Karlsen", "Jamar Olsson", "Lara Martin",
                             "Ann Andersson", "Remington Andersson", "Rene Carlsson", "Elvis Olsen", "Solomon Olsen",
-                            "Jaydan Jackson", "Bernard Nilsen")
+                            "Jaydan Jackson", "Bernard Nilsen", "AshishKumar Gupta", "Arpitha Kumar")
                             .map(name -> {
                                 String[] split = name.split(" ");
                                 Contact contact = new Contact();
